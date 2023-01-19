@@ -1,7 +1,8 @@
 import React from 'react';
 import { Table } from 'antd';
-import { CaseStatus } from '../data/case-status';
+import { CaseStatus } from '../../data/case-status';
 import { columns } from './case-status-schema';
+import { Key } from 'antd/es/table/interface';
 
 const dataSource: [CaseStatus] = [
     {
@@ -21,7 +22,7 @@ function MyCases() {
             rowKey={'receiptNumber'}
             rowSelection={{
                 type: 'checkbox',
-                onChange: (selectedRowKeys, selectedRows) => {
+                onChange: (selectedRowKeys: Key[], selectedRows: CaseStatus[]) => {
                     console.log(selectedRowKeys, selectedRows)
                 }
             }}

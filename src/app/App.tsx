@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import './App.css';
 import { Content, Header } from 'antd/es/layout/layout';
-import MyCases from '../my-cases/MyCases';
+import MyCases from './my-cases/MyCases';
 
 function App() {
   return (

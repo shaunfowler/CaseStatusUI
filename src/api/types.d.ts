@@ -1,4 +1,4 @@
-export interface CaseStatus {
+export interface ICaseStatus {
     receiptNumber: string
     status: string
     description: string
